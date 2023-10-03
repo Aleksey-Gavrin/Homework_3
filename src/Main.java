@@ -31,5 +31,20 @@ public class Main {
         short paperPerStudent = (short) (totalPaper / totalStudents);
         System.out.println ("На каждого ученика рассчитано " + paperPerStudent + " листов бумаги");
 
+        System.out.println ();
+
+        byte bottlesIn2Minutes = 16;
+        short bottlesIn20Minutes = (short) (bottlesIn2Minutes * 10);
+        System.out.println ("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок");
+        short bottlesIn24Hours = (short) (bottlesIn20Minutes * 3 *24);
+        System.out.println ("За сутки машина произвела " + bottlesIn24Hours + " штук бутылок");
+        int bottlesIn3Days = bottlesIn24Hours * 3;
+        System.out.println ("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
+        int bottlesIn1Month = bottlesIn24Hours * 30;
+        System.out.println ("За месяц машина произвела " + bottlesIn1Month + " штук бутылок");
+
+        System.out.println ();
+
+
     }
 }

@@ -21,7 +21,15 @@ public class Main {
         int sixthNumber = 27897;
         byte seventhNumber = 67;
 
+        System.out.println ();
 
+        byte ludmilaStudents = 23;
+        byte annaStudents = 27;
+        byte ekaterinaStudents = 30;
+        short totalStudents = (short) (ludmilaStudents + annaStudents + ekaterinaStudents);
+        short totalPaper = 480;
+        short paperPerStudent = (short) (totalPaper / totalStudents);
+        System.out.println ("На каждого ученика рассчитано " + paperPerStudent + " листов бумаги");
 
     }
 }

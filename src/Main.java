@@ -36,7 +36,7 @@ public class Main {
         byte bottlesIn2Minutes = 16;
         short bottlesIn20Minutes = (short) (bottlesIn2Minutes * 10);
         System.out.println ("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок");
-        short bottlesIn24Hours = (short) (bottlesIn20Minutes * 3 *24);
+        short bottlesIn24Hours = (short) (bottlesIn20Minutes * 3 * 24);
         System.out.println ("За сутки машина произвела " + bottlesIn24Hours + " штук бутылок");
         int bottlesIn3Days = bottlesIn24Hours * 3;
         System.out.println ("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
@@ -44,6 +44,14 @@ public class Main {
         System.out.println ("За месяц машина произвела " + bottlesIn1Month + " штук бутылок");
 
         System.out.println ();
+
+        short paintTotal = 120;
+        byte paintWhite1Room = 2;
+        byte paintBrown1Room = 4;
+        short roomsQty = (short) (paintTotal / (paintWhite1Room + paintBrown1Room));
+        short paintWhiteTotal = (short) (paintWhite1Room * roomsQty);
+        short paintBrownTotal = (short) (paintBrown1Room * roomsQty);
+        System.out.println ("В школе, где " + roomsQty + " классов, нужно " + paintWhiteTotal + " банок белой краски и " + paintBrownTotal + " банок коричневой краски.");
 
 
     }

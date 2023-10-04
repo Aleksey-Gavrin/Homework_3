@@ -53,6 +53,17 @@ public class Main {
         short paintBrownTotal = (short) (paintBrown1Room * roomsQty);
         System.out.println ("В школе, где " + roomsQty + " классов, нужно " + paintWhiteTotal + " банок белой краски и " + paintBrownTotal + " банок коричневой краски.");
 
+        System.out.println ();
+
+        byte bananaWeight = 80;
+        byte milkWeight = 105;
+        byte iceCreamWeight = 100;
+        byte eggWeight = 70;
+        short recipeWeightGr = (short) (bananaWeight * 5 + milkWeight * 2 + iceCreamWeight * 2 + eggWeight * 4);
+        float recipeWeightKg = recipeWeightGr / 1000f;
+        System.out.println ("Вес спортзавтрака - " + recipeWeightGr + " грамм или " + recipeWeightKg + " килограмм.");
+
+
 
     }
 }

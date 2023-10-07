@@ -112,7 +112,8 @@ public class Main {
         short paintWhiteTotal = (short) (paintWhite1Room * roomsQty);
         short paintBrownTotal = (short) (paintBrown1Room * roomsQty);
         System.out.println("Результат выполнения задачи 5:");
-        System.out.println ("В школе, где " + roomsQty + " классов, нужно " + paintWhiteTotal + " банок белой краски и " + paintBrownTotal + " банок коричневой краски.");
+        System.out.println ("В школе, где " + roomsQty + " классов, нужно " + paintWhiteTotal + " банок белой краски и "
+                + paintBrownTotal + " банок коричневой краски.");
 
         System.out.println ();
 
@@ -157,6 +158,43 @@ public class Main {
         System.out.println("Результат выполнения задачи 7:");
         System.out.println("Чтобы добиться результата похудения на " + weightToLose + " кг, потребуется минимум " + daysGoalMin +
                 " дней, максимум - " + daysGoalMax + " дней. А в среднем потребуется " + daysGoalAvg + " дней.");
+
+        System.out.println();
+
+        /*Задача 8
+
+        Представим, что мы работаем в большой компании, штат которой состоит из нескольких сотен сотрудников. В компании
+        есть правило: чем дольше сотрудник работает в компании, тем ценнее он для бизнеса. Поэтому сотрудники, которые
+        работают в компании дольше 3 лет, получают повышение зарплаты раз в год. Каждый год повышение составляет 10% от текущей зарплаты.
+        К вам пришел руководитель с задачей автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+        Маша получает 67 760 рублей в месяц.
+        Денис получает 83 690 рублей в месяц.
+        Кристина получает 76 230 рублей в месяц.
+        Каждому нужно увеличить зарплату на 10% от текущей месячной.
+        Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+        Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+        Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».*/
+
+        System.out.println("Результат выполнения задачи 8:");
+        int mashaMonthSlr = 67_760;
+        int mashaYearSlr = mashaMonthSlr * 12;
+        int mashaMonthSlrNew = (int) (mashaMonthSlr * 1.1f);
+        int mashaYearSlrNew = mashaMonthSlrNew * 12;
+        int mashaYearSlrDiff = mashaYearSlrNew - mashaYearSlr;
+        System.out.println("Маша теперь получает " + mashaMonthSlrNew + " рублей. Годовой доход вырос на " + mashaYearSlrDiff + " рублей.");
+        int denisMonthSlr = 83_690;
+        int denisYearSlr = denisMonthSlr * 12;
+        int denisMonthSlrNew = (int) (denisMonthSlr * 1.1f);
+        int denisYearSlrNew = denisMonthSlrNew * 12;
+        int denisYearSlrDiff = denisYearSlrNew - denisYearSlr;
+        System.out.println("Денис теперь получает " + denisMonthSlrNew + " рублей. Годовой доход вырос на " + denisYearSlrDiff + " рублей.");
+        int kristinaMonthSlr = 76_230;
+        int kristinaYearSlr = kristinaMonthSlr * 12;
+        int kristinaMonthSlrNew = (int) (kristinaMonthSlr * 1.1f);
+        int kristinaYearSlrNew = kristinaMonthSlrNew * 12;
+        int kristinaYearSlrDiff = kristinaYearSlrNew - kristinaYearSlr;
+        System.out.println("Кристина теперь получает " + kristinaMonthSlrNew + " рублей. Годовой доход вырос на " + kristinaYearSlrDiff + " рублей.");
+
 
 
 
